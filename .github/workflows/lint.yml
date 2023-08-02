@@ -19,4 +19,3 @@ jobs:
         run: yarn
       - name: Run Linting
         run: yarn run lint
-        continue-on-error: true
