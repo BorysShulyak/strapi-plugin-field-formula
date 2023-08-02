@@ -4,8 +4,9 @@
  *
  */
 
-import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import { useEffect, useRef } from 'react';
+
 import pluginId from '../../pluginId';
 
 const Initializer = ({ setPlugin }) => {
@@ -20,7 +21,7 @@ const Initializer = ({ setPlugin }) => {
 };
 
 Initializer.propTypes = {
-  setPlugin: PropTypes.func.isRequired,
+  setPlugin: PropTypes.func.isRequired
 };
 
 export default Initializer;

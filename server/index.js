@@ -21,5 +21,5 @@ module.exports = {
   services,
   contentTypes,
   policies,
-  middlewares,
+  middlewares
 };

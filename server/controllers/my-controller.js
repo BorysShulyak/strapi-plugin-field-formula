@@ -6,5 +6,5 @@ module.exports = ({ strapi }) => ({
       .plugin('strapi-plugin-field-formula')
       .service('myService')
       .getWelcomeMessage();
-  },
+  }
 });
