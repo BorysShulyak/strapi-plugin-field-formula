@@ -4,7 +4,7 @@ module.exports = [
     path: '/',
     handler: 'myController.index',
     config: {
-      policies: [],
-    },
-  },
+      policies: []
+    }
+  }
 ];
