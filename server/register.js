@@ -1,9 +1,15 @@
 'use strict';
 
+const pluginPkg = require('../package.json');
+
+const plugin = require('../admin/src/pluginId');
+
+const { name } = pluginPkg.strapi;
+
 module.exports = ({ strapi }) => {
   strapi.customFields.register({
-    name: 'formula',
-    plugin: 'strapi-plugin-field-formula',
-    type: 'string'
+    name,
+    plugin,
+    type: 'json'
   });
 };

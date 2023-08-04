@@ -1,7 +1,6 @@
 import { prefixPluginTranslations } from '@strapi/helper-plugin';
 
 import pluginPkg from '../../package.json';
-import Initializer from './components/Initializer';
 import PluginIcon from './components/PluginIcon';
 import pluginId from './pluginId';
 
@@ -9,31 +8,23 @@ const { name } = pluginPkg.strapi;
 
 export default {
   register(app) {
-    app.addMenuLink({
-      to: `/plugins/${pluginId}`,
-      icon: PluginIcon,
+    app.customFields.register({
+      name,
+      pluginId,
+      type: 'json',
       intlLabel: {
-        id: `${pluginId}.plugin.name`,
-        defaultMessage: name
+        id: 'strapi-plugin-field-formula.formula.label',
+        defaultMessage: 'Formula'
       },
-      Component: async () => {
-        const component = await import(/* webpackChunkName: "[request]" */ './pages/App');
-
-        return component;
+      intlDescription: {
+        id: 'strapi-plugin-field-formula.formula.description',
+        defaultMessage: 'Let Formula to calculate!'
       },
-      permissions: [
-        // Uncomment to set the permissions of the plugin here
-        // {
-        //   action: '', // the action name should be plugin::plugin-name.actionType
-        //   subject: null,
-        // },
-      ]
-    });
-    app.registerPlugin({
-      id: pluginId,
-      initializer: Initializer,
-      isReady: false,
-      name
+      icon: PluginIcon,
+      components: {
+        Input: async () => import(/* webpackChunkName: "input-component" */ './components/Input')
+      },
+      options: {}
     });
   },
 
