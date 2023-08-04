@@ -27,5 +27,5 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: Install dependencies
         run: yarn
-      - name: Lint
+      - name: Test
         run: yarn test
