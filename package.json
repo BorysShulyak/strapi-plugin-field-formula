@@ -9,6 +9,8 @@
     "displayName": "Strapi Plugin Field Formula"
   },
   "scripts": {
+    "prepare": "husky install",
+    "commit": "commit",
     "lint": "eslint . --ext .jsx,.js --quiet",
     "lint-fix": "eslint . --ext .jsx,.js --fix",
     "test": "jest --testPathPattern='\\/__tests__\\/.*\\.(?:test|spec)\\.js$' --ci  2>&1"
@@ -39,7 +41,11 @@
     "eslint-plugin-testing-library": "5.10.2",
     "eslint-plugin-jest-formatting": "3.1.0",
     "jest": "29.6.2",
-    "jest-junit": "16.0.0"
+    "jest-junit": "16.0.0",
+    "@commitlint/config-conventional": "17.6.7",
+    "@commitlint/cli": "17.6.7",
+    "@commitlint/prompt-cli": "17.6.7",
+    "husky": "8.0.0"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
