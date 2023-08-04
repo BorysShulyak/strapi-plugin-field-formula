@@ -6,5 +6,13 @@ module.exports = [
     config: {
       policies: []
     }
-  }
+  },
+  {
+    method: 'POST',
+    path: '/mathjs-calculate',
+    handler: 'mathjsController.calculate',
+    config: {
+      policies: [],
+    },
+  },
 ];
