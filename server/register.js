@@ -1,5 +1,9 @@
 'use strict';
 
-module.exports = () => {
-  // registeration phase
+module.exports = ({ strapi }) => {
+  strapi.customFields.register({
+    name: 'formula',
+    plugin: 'strapi-plugin-field-formula',
+    type: 'string'
+  });
 };
