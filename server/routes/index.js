@@ -1,7 +1,7 @@
 module.exports = [
   {
     method: 'POST',
-    path: '/mathjs-calculate',
+    path: '/calculate',
     handler: 'mathjsController.calculate',
     config: {
       policies: []
