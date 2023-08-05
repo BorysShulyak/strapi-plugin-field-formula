@@ -1,7 +1,6 @@
 import { prefixPluginTranslations } from '@strapi/helper-plugin';
 
 import pluginPkg from '../../package.json';
-import PluginIcon from './components/PluginIcon';
 import pluginId from './pluginId';
 
 const { name } = pluginPkg.strapi;
@@ -20,7 +19,7 @@ export default {
         id: 'strapi-plugin-field-formula.formula.description',
         defaultMessage: 'Let Formula to calculate!'
       },
-      icon: PluginIcon,
+      // icon: PluginIcon,
       components: {
         Input: async () => import(/* webpackChunkName: "input-component" */ './components/Input')
       },

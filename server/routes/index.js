@@ -12,7 +12,7 @@ module.exports = [
     path: '/mathjs-calculate',
     handler: 'mathjsController.calculate',
     config: {
-      policies: [],
-    },
-  },
+      policies: []
+    }
+  }
 ];
