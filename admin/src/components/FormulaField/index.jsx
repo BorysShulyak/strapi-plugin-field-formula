@@ -56,7 +56,7 @@ const FormulaField = ({ name, onChange, value, attribute }) => {
         }
       });
     } catch (e) {
-      throw new Error(`Failed to calculate formula: ${e.message}`);
+      console.error(`Failed to calculate formula: ${e.message}`);
     }
   }, [attribute.type, formula, name, onChange, scope]);
 
