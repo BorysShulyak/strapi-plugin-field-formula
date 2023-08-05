@@ -1,8 +1,8 @@
 module.exports = [
   {
-    method: 'GET',
-    path: '/',
-    handler: 'myController.index',
+    method: 'POST',
+    path: '/calculate',
+    handler: 'mathjsController.calculate',
     config: {
       policies: []
     }
