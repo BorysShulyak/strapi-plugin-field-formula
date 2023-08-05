@@ -1,52 +1,92 @@
-import { Box, Button, Stack, TextInput } from '@strapi/design-system';
-import { useCMEditViewDataManager } from '@strapi/helper-plugin';
+import {
+  Box,
+  Button,
+  Field,
+  FieldInput,
+  FieldLabel,
+  Flex,
+  JSONInput,
+  Stack,
+  Typography
+} from '@strapi/design-system';
 import { func, shape, string } from 'prop-types';
 import React, { useCallback, useMemo } from 'react';
 
 import api from '../../api';
-import { useFieldInfo } from '../../hooks';
 
 const parseValue = (value) => (value ? JSON.parse(value) : null);
 
 const FormulaField = ({ name, onChange, value, attribute }) => {
-  const { formula, result } = useMemo(() => parseValue(value) || {}, [value]);
-  const editViewData = useCMEditViewDataManager();
-  const [, fieldNamespaceData] = useFieldInfo(name, editViewData);
+  const { formula, scope, result } = useMemo(() => parseValue(value) || {}, [value]);
 
   const handleFormulaChange = useCallback(
     (e) => {
       onChange({
-        target: { name, value: JSON.stringify({ formula: e.target.value }), type: attribute.type }
+        target: {
+          name,
+          value: JSON.stringify({ formula: e.target.value, scope }),
+          type: attribute.type
+        }
       });
     },
-    [attribute.type, name, onChange]
+    [attribute.type, name, onChange, scope]
+  );
+
+  const handleScopeChange = useCallback(
+    (e) => {
+      onChange({
+        target: {
+          name,
+          value: JSON.stringify({ formula, scope: e }),
+          type: attribute.type
+        }
+      });
+    },
+    [attribute.type, formula, name, onChange]
   );
 
   const calculateFormula = useCallback(async () => {
     try {
-      const calculationResult = api.mathjs.calculateFormula(formula, fieldNamespaceData);
+      const calculationResult = await api.mathjs.calculateFormula(formula, parseValue(scope) || {});
       onChange({
         target: {
           name,
-          value: JSON.stringify({ formula, result: calculationResult }),
+          value: JSON.stringify({ formula, scope, result: calculationResult }),
           type: attribute.type
         }
       });
     } catch (e) {
       throw new Error(`Failed to calculate formula: ${e.message}`);
     }
-  }, [attribute.type, fieldNamespaceData, formula, name, onChange]);
+  }, [attribute.type, formula, name, onChange, scope]);
 
   return (
     <Stack spacing={1}>
-      <TextInput
-        label="Formula"
-        name="formula"
-        placeholder="Please write a formula"
-        value={formula}
-        onChange={handleFormulaChange}
-      />
-      <Box>{result}</Box>
+      <Flex alignItems="center" direction="row" gap={2}>
+        <Field name="formula" required={false}>
+          <Flex alignItems="flex-start" direction="column" gap={1}>
+            <FieldLabel>{name}: Formula</FieldLabel>
+            <FieldInput
+              placeholder="Please write a formula"
+              type="text"
+              value={formula}
+              onChange={handleFormulaChange}
+            />
+          </Flex>
+        </Field>
+        <Box>
+          <Typography fontWeight="semiBold" variant="omega">
+            =
+          </Typography>
+        </Box>
+        <Field name="result" required={false}>
+          <Flex alignItems="flex-start" direction="column" gap={1}>
+            <FieldLabel>{name}: Result</FieldLabel>
+            <FieldInput disabled placeholder="Formula result" type="text" value={result} />
+          </Flex>
+        </Field>
+      </Flex>
+      <JSONInput editable label={`${name}: Scope`} value={scope} onChange={handleScopeChange} />
       <Button onClick={calculateFormula}>Calculate</Button>
     </Stack>
   );

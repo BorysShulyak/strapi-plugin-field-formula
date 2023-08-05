@@ -7,7 +7,7 @@ module.exports = () => ({
     try {
       return mathjs.evaluate(formula, scope);
     } catch (err) {
-      console.log(err.response);
+      console.log('mathjsService.calculate Error: ', err.response);
       return '';
     }
   }
