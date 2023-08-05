@@ -21,7 +21,7 @@ export default {
       },
       // icon: PluginIcon,
       components: {
-        Input: async () => import(/* webpackChunkName: "input-component" */ './components/Input')
+        Input: async () => import(/* webpackChunkName: "input-component" */ './components/FormulaField')
       },
       options: {}
     });
