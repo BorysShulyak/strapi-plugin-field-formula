@@ -14,4 +14,4 @@ updates:
       - "BorysShulyak"
     commit-message:
       include: scope
-      prefix: "chore:"
+      prefix: "chore"
