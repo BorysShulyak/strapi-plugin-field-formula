@@ -19,7 +19,6 @@ export default {
         id: 'strapi-plugin-field-formula.formula.description',
         defaultMessage: 'Let Formula to calculate!'
       },
-      // icon: PluginIcon,
       components: {
         Input: async () =>
           import(/* webpackChunkName: "input-component" */ './components/FormulaField')
