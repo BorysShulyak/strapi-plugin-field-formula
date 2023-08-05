@@ -2,6 +2,7 @@ import { prefixPluginTranslations } from '@strapi/helper-plugin';
 
 import pluginPkg from '../../package.json';
 import pluginId from './pluginId';
+import getTrad from "./utils/getTrad";
 
 const { name } = pluginPkg.strapi;
 
@@ -12,12 +13,12 @@ export default {
       pluginId,
       type: 'json',
       intlLabel: {
-        id: 'strapi-plugin-field-formula.formula.label',
-        defaultMessage: 'Formula'
+        id: getTrad(`label`),
+        defaultMessage: 'Formula',
       },
       intlDescription: {
-        id: 'strapi-plugin-field-formula.formula.description',
-        defaultMessage: 'Let Formula to calculate!'
+        id: getTrad(`description`),
+        defaultMessage: 'Let Formula to Calculate your Scope!'
       },
       components: {
         Input: async () =>
