@@ -2,7 +2,7 @@ import { prefixPluginTranslations } from '@strapi/helper-plugin';
 
 import pluginPkg from '../../package.json';
 import pluginId from './pluginId';
-import getTrad from "./utils/getTrad";
+import getTrad from './utils/getTrad';
 
 const { name } = pluginPkg.strapi;
 
@@ -14,7 +14,7 @@ export default {
       type: 'json',
       intlLabel: {
         id: getTrad(`label`),
-        defaultMessage: 'Formula',
+        defaultMessage: 'Formula'
       },
       intlDescription: {
         id: getTrad(`description`),
