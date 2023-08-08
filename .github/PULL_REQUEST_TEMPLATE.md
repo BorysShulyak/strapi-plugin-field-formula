@@ -2,14 +2,13 @@
 - [ ]  MR pipeline is green.
 - [ ]  Tests are added/updated (if relevant).
 - [ ]  Change are fully described in the MR description.
-- [ ]  Impact Analysis were provided.
+- [ ]  [Impact Analysis](https://dev.to/borysshulyak/impact-analysis-unleashing-the-power-of-understanding-code-dependencies-4ma6) were provided.
 - [ ]  The related MRs are linked to the current (if relevant).
 - [ ]  Reviewers are assigned.
 - [ ]  All the labels are added (Type, Priority, Workflow).
 
 ## Glossary
 - :white_check_mark: - covered with tests
-- :books: - storybook stories added
 - :boom: - impacted
 - **CodeReview** process - `documentation/CODE_REVIEW.md`
 
