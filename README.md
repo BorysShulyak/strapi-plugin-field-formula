@@ -1,32 +1,23 @@
 <div align="center" width="150px">
-  <img style="width: 150px; height: auto;" src="public/assets/logo.png" alt="Logo - Strapi Formula field" />
+  <img style="width: 150px; height: auto;" src="public/logo.png" alt="Logo - Strapi Formula field" />
 </div>
 <div align="center">
   <h1>Strapi v4 - Formula field</h1>
   <p>Powerful math operations just inside your Headless CMS!</p>
-  <a href="https://www.npmjs.org/package/strapi-plugin-comments">
-    <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/VirtusLab-Open-Source/strapi-plugin-comments?label=npm&logo=npm">
+  <a href="https://github.com/BorysShulyak/strapi-plugin-field-formula/blob/main/LICENSE">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/BorysShulyak/strapi-plugin-field-formula">
   </a>
-  <a href="https://www.npmjs.org/package/strapi-plugin-comments">
-    <img src="https://img.shields.io/npm/dm/strapi-plugin-comments.svg" alt="Monthly download on NPM" />
+  <a href="https://github.com/BorysShulyak/strapi-plugin-field-formula/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/BorysShulyak/strapi-plugin-field-formula?color=5d2de0">
   </a>
-  <a href="https://circleci.com/gh/VirtusLab-Open-Source/strapi-plugin-comments">
-    <img src="https://circleci.com/gh/VirtusLab-Open-Source/strapi-plugin-comments.svg?style=shield" alt="CircleCI" />
-  </a>
-  <a href="https://codecov.io/gh/VirtusLab-Open-Source/strapi-plugin-comments">
-    <img src="https://codecov.io/gh/VirtusLab-Open-Source/strapi-plugin-comments/coverage.svg?branch=master" alt="codecov.io" />
-  </a>
-  <a href="https://sharing.clickup.com/tl/xhcmx-83/strapiv-4-comments-roadmap">
-    <img src="https://img.shields.io/website?down_message=roadmap&label=product&up_message=roadmap&url=https%3A%2F%2Fsharing.clickup.com%2Ftl%2Fxhcmx-83%2Fstrapiv-4-comments-roadmap" />
-  </a>
-  <a href="https://sharing.clickup.com/b/xhcmx-63/strapiv-4-comments-board">
-    <img src="https://img.shields.io/website?down_message=board&label=product&up_color=blue&up_message=board&url=https%3A%2F%2Fsharing.clickup.com%2Fb%2Fxhcmx-63%2Fstrapiv-4-comments-board" />
+  <a href="https://www.npmjs.com/package/strapi-plugin-field-formula">
+    <img alt="npm downloads" src="https://img.shields.io/npm/dm/strapi-plugin-field-formula">
   </a>
 </div>
 
 ---
 <div style="margin: 20px 0" align="center">
-  <img style="width: 100%; height: auto;" src="public/assets/preview.png" alt="UI preview" />
+  <img style="width: 100%; height: auto;" src="public/preview.png" alt="UI preview" />
 </div>
 
 A plugin for [Strapi Headless CMS](https://github.com/strapi/strapi) that provides an integration with powerful 
@@ -40,9 +31,13 @@ A plugin for [Strapi Headless CMS](https://github.com/strapi/strapi) that provid
 - [⚙️ Configuration](#-configuration)
 - [♾️Usage](#-usage)
 - [🛠️ Contributing](#-contributing)
+- [🗺️ Roadmap](#-roadmap)
 - [❤️Support or Donate](#-support-or-donate)
 
 ## ✨ Features
+- [Strapi Custom Field](https://docs.strapi.io/dev-docs/custom-fields) for calculating the provided formula.
+- [mathjs](https://mathjs.org/) integration.
+- Calculating the `formula` with the provided `scope` using the powerful `mathjs.evaluate` method. [Read More.](https://mathjs.org/docs/expressions/parsing.html#evaluate)
 
 ## 🧰 Requirements
 
@@ -95,10 +90,36 @@ module.exports = {
 My congratulation 😄! You have successfully installed and configured the **Strapi Plugin Field Formula**.
 
 ## ♾️ Usage
+Function `evaluate` accepts a single **(in our case)** `expression` or an array with expressions as the first argument
+and has an optional second argument containing a `scope` with variables and functions. The scope can be a regular
+JavaScript Object, or Map **(JSON in our case)**. The scope will be used to resolve symbols, and to write assigned
+variables or function.
+
+### Example 1
+```
+formula: sqrt(x^y + r^k)
+scope: {
+  "x": 2,
+  "y": 3,
+  "r": 4,
+  "k": 5
+}
+result: 32.12475680841802
+```
+
+### Example 2
+```
+formula: cos(x deg)
+scope: { "x": 45 }
+result: 0.7071067811865476
+```
 
 ## 🛠️ Contributing
 See the [CONTRIBUTING.md](https://github.com/BorysShulyak/strapi-plugin-field-formula/blob/main/documentation/CONTRIBUTING.md) 
 document.
+
+## 🗺️ Roadmap
+- Object response to unleash more difficult expressions.
 
 ## ❤️ Support or Donate
 If you are enjoying this plugin and feel extra appreciative, you could [buy me a book](https://bmc.link/borisshulyak) 
