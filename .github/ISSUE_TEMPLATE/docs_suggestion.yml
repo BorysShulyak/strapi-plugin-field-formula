@@ -1,7 +1,7 @@
 name: 📖 Documentation Suggestion
 description: Suggestions on how we can improve the documentation.
 title: '[📖]'
-labels: ['type | documentation']
+labels: ['type::maintenance', 'workflow::problem validation']
 body:
   - type: markdown
     attributes:

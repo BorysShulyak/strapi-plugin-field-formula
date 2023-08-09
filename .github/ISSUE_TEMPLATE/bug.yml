@@ -1,6 +1,6 @@
 name: 🐞 Bug Report
 description: Something does not work or is flaky! let us know!
-labels: ['type | bug']
+labels: ['type::bug', 'workflow::problem validation']
 title: '[🐞]'
 body:
   - type: markdown

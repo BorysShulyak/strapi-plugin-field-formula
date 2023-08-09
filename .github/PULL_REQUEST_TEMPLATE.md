@@ -5,7 +5,7 @@
 - [ ]  [Impact Analysis](https://dev.to/borysshulyak/impact-analysis-unleashing-the-power-of-understanding-code-dependencies-4ma6) were provided.
 - [ ]  The related MRs are linked to the current (if relevant).
 - [ ]  Reviewers are assigned.
-- [ ]  All the labels are added (Type, Priority, Workflow).
+- [ ]  All the required labels are added. [Read more.](https://github.com/BorysShulyak/strapi-plugin-field-formula/blob/main/documentation/LABELS.md)
 
 ## Glossary
 - :white_check_mark: - covered with tests
