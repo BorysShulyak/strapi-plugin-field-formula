@@ -1,9 +1,9 @@
 {
   "name": "strapi-plugin-field-formula",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Strapi Plugin Field Formula - Custom Field for integration mathjs and Strapi",
   "strapi": {
-    "name": "strapi-plugin-field-formula",
+    "name": "field-formula",
     "description": " Custom Field for integration mathjs and Strapi and enable the powerful math expressions calculation",
     "kind": "plugin",
     "displayName": "Formula"
