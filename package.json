@@ -20,8 +20,7 @@
     "@strapi/helper-plugin": "^4.12.1",
     "@strapi/icons": "^1.6.3",
     "prop-types": "^15.7.2",
-    "axios": "1.4.0",
-    "mathjs": "11.9.1"
+    "axios": "1.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.7",
@@ -45,12 +44,16 @@
     "prettier": "3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^5.3.4"
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6",
+    "mathjs": "11.9.1"
   },
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0",
-    "react-router-dom": "^5.3.4"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6",
+    "mathjs": "11.9.1"
   },
   "author": {
     "name": "A Strapi developer"
