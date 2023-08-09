@@ -1,12 +1,12 @@
 {
   "name": "strapi-plugin-field-formula",
   "version": "0.0.0",
-  "description": "This is the description of the plugin.",
+  "description": "Strapi Plugin Field Formula - Custom Field for integration mathjs and Strapi",
   "strapi": {
     "name": "strapi-plugin-field-formula",
-    "description": "Description of Strapi Plugin Field Formula plugin",
+    "description": " Custom Field for integration mathjs and Strapi and enable the powerful math expressions calculation",
     "kind": "plugin",
-    "displayName": "Strapi Plugin Field Formula"
+    "displayName": "Formula"
   },
   "scripts": {
     "prepare": "husky install",
@@ -55,17 +55,38 @@
     "styled-components": "^5.3.6",
     "mathjs": "11.9.1"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "maintainers": [
-    {
-      "name": "A Strapi developer"
-    }
-  ],
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorysShulyak/strapi-plugin-field-formula.git"
+  },
+  "keywords": [
+    "strapi",
+    "plugin",
+    "custom",
+    "field",
+    "formula",
+    "math",
+    "mathjs"
+  ],
+  "homepage": "https://github.com/BorysShulyak/strapi-plugin-field-formula#readme",
+  "bugs": {
+    "url" : "https://github.com/BorysShulyak/strapi-plugin-field-formula/issues"
+  },
+  "author": {
+    "name": "BorysShulyak",
+    "email": "borysshulyak@gmail.com",
+    "url": "https://github.com/BorysShulyak"
+  },
+  "maintainers": [
+    {
+      "name": "BorysShulyak",
+      "email": "borysshulyak@gmail.com",
+      "url": "https://github.com/BorysShulyak"
+    }
+  ],
   "license": "MIT"
 }
