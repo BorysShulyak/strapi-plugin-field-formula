@@ -15,7 +15,6 @@
   </a>
 </div>
 
----
 <div style="margin: 20px 0" align="center">
   <img style="width: 100%; height: auto;" src="public/preview.png" alt="UI preview" />
 </div>
