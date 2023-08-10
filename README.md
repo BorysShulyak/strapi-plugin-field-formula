@@ -37,6 +37,11 @@ A plugin for [Strapi Headless CMS](https://github.com/strapi/strapi) that provid
 ## ✨ Features
 - [Strapi Custom Field](https://docs.strapi.io/dev-docs/custom-fields) for calculating the provided formula.
 - [mathjs](https://mathjs.org/) integration.
+  - Supports numbers, big numbers, complex numbers, fractions, units, strings, arrays, and matrices. 
+  - Is compatible with JavaScript’s built-in Math library. 
+  - Contains a flexible expression parser. 
+  - Does symbolic computation. 
+  - Comes with a large set of built-in functions and constants.
 - Calculating the `formula` with the provided `scope` using the powerful `mathjs.evaluate` method. [Read More.](https://mathjs.org/docs/expressions/parsing.html#evaluate)
 
 ## 🧰 Requirements
@@ -90,7 +95,16 @@ module.exports = {
 My congratulation 😄! You have successfully installed and configured the **Strapi Plugin Field Formula**.
 
 ## ♾️ Usage
-Function `evaluate` accepts a single **(in our case)** `expression` or an array with expressions as the first argument
+> Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support 
+for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated 
+solution to work with different data types like numbers, big numbers, complex numbers, fractions, units, and matrices. 
+Powerful and easy to use.
+
+Here is some examples, but to use this plugin on the full 100%, you have to read the official [Mathjs](https://mathjs.org/examples/index.html) 
+documentation, and especially the [expressions](https://mathjs.org/examples/expressions.js.html) part as `formula` is 
+the same thing as `mathjs.evaluate` method 🤫
+
+> Function `evaluate` accepts a single **(in our case)** `expression` or an array with expressions as the first argument
 and has an optional second argument containing a `scope` with variables and functions. The scope can be a regular
 JavaScript Object, or Map **(JSON in our case)**. The scope will be used to resolve symbols, and to write assigned
 variables or function.
