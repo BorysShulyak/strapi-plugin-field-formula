@@ -32,6 +32,7 @@ A plugin for [Strapi Headless CMS](https://github.com/strapi/strapi) that provid
 - [🛠️ Contributing](#-contributing)
 - [🗺️ Roadmap](#-roadmap)
 - [❤️Support or Donate](#-support-or-donate)
+- [💕Support or Donate](#-special-thanks)
 
 ## ✨ Features
 - [Strapi Custom Field](https://docs.strapi.io/dev-docs/custom-fields) for calculating the provided formula.
@@ -123,6 +124,9 @@ document.
 ## ❤️ Support or Donate
 If you are enjoying this plugin and feel extra appreciative, you could [buy me a book](https://bmc.link/borisshulyak) 
 📖 or 3 📖📖📖.
+
+## 💕 Special Thanks
+- I want to say thank you to **my wife Diana** for her love, daily support, motivation and inspiration.
 
 
 
