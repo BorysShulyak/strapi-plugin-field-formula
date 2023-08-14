@@ -129,7 +129,7 @@ result: 0.7071067811865476
 ```
 
 ## 🛠️ Contributing
-See the [CONTRIBUTING.md](https://github.com/BorysShulyak/strapi-plugin-field-formula/blob/main/documentation/CONTRIBUTING.md) 
+See the [CONTRIBUTING.md](https://github.com/BorysShulyak/strapi-plugin-field-formula/blob/main/CONTRIBUTING.md) 
 document.
 
 ## 🗺️ Roadmap
