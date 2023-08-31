@@ -11,7 +11,7 @@
     <img alt="GitHub issues" src="https://img.shields.io/github/issues/BorysShulyak/strapi-plugin-field-formula?color=5d2de0">
   </a>
   <a href="https://www.npmjs.com/package/strapi-plugin-field-formula">
-    <img alt="npm downloads" src="https://img.shields.io/npm/dm/strapi-plugin-field-formula">
+    <img alt="npm downloads" src="https://img.shields.io/npm/dt/strapi-plugin-field-formula">
   </a>
 </div>
 
