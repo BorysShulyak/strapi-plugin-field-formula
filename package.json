@@ -46,7 +46,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "styled-components": "^5.3.6",
-    "mathjs": "11.9.1"
+    "mathjs": "11.11.0"
   },
   "peerDependencies": {
     "@strapi/strapi": "^4.4.0",
@@ -54,7 +54,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "styled-components": "^5.3.6",
-    "mathjs": "11.9.1"
+    "mathjs": "11.11.0"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
