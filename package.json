@@ -21,7 +21,7 @@
     "@strapi/icons": "^1.6.3",
     "prop-types": "^15.7.2",
     "axios": "1.5.1",
-    "mathjs": "11.9.1"
+    "mathjs": "11.11.1"
   },
   "devDependencies": {
     "@commitlint/cli": "17.7.1",
