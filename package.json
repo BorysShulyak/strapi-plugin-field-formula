@@ -20,7 +20,7 @@
     "@strapi/helper-plugin": "^4.12.5",
     "@strapi/icons": "^1.6.3",
     "prop-types": "^15.7.2",
-    "axios": "1.4.0",
+    "axios": "1.5.1",
     "mathjs": "11.9.1"
   },
   "devDependencies": {
