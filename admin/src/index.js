@@ -9,8 +9,8 @@ const { name } = pluginPkg.strapi;
 export default {
   register(app) {
     app.customFields.register({
-      name,
-      pluginId,
+      name: 'formula',
+      pluginId: 'field-formula',
       type: 'json',
       intlLabel: {
         id: getTrad(`label`),
