@@ -1,6 +1,5 @@
 import { prefixPluginTranslations } from '@strapi/helper-plugin';
 
-import pluginPkg from '../../package.json';
 import pluginId from './pluginId';
 import getTrad from './utils/getTrad';
 
