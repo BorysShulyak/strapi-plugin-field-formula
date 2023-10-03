@@ -61,11 +61,11 @@ documentation](https://docs.strapi.io/dev-docs/quick-start).
 
 ## 🦾 Installation
 ```shell
-yarn add mathjs@11.9.1 strapi-plugin-field-formula@latest
+yarn add strapi-plugin-field-formula@latest
 ```
 **OR**
 ```shell
-npm install mathjs@11.9.1 strapi-plugin-field-formula@latest
+npm install strapi-plugin-field-formula@latest
 ```
 After successful installation you could re-build the Strapi instance. You could use the next commands (default) inside
 your Strapi project:
