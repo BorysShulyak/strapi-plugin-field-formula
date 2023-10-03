@@ -47,7 +47,6 @@ A plugin for [Strapi Headless CMS](https://github.com/strapi/strapi) that provid
 ## 🧰 Requirements
 
 - `strapi@4.X.X`
-- `mathjs@11.9.1`
 
 Complete installation requirements are exact the same as for Strapi itself and could be found in the [official Strapi
 documentation](https://docs.strapi.io/dev-docs/quick-start).
