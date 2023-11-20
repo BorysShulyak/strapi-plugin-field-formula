@@ -485,6 +485,14 @@
     "@commitlint/types" "^17.4.4"
     ajv "^8.11.0"
 
+"@commitlint/config-validator@^18.4.0":
+  version "18.4.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-validator/-/config-validator-18.4.0.tgz#7197d7ab3248dd936782b319cafc0480ab9732d5"
+  integrity sha512-1y6qHMU3o4cYQSK+Y9EnmH6H1GRiwQGjnLIUOIKlekrmfc8MrMk1ByNmb8od4vK3qHJAaL/77/5n+1uyyIF5dA==
+  dependencies:
+    "@commitlint/types" "^18.4.0"
+    ajv "^8.11.0"
+
 "@commitlint/ensure@^17.6.7":
   version "17.6.7"
   resolved "https://registry.npmjs.org/@commitlint/ensure/-/ensure-17.6.7.tgz"
@@ -497,10 +505,27 @@
     lodash.startcase "^4.4.0"
     lodash.upperfirst "^4.3.1"
 
+"@commitlint/ensure@^18.4.0":
+  version "18.4.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/ensure/-/ensure-18.4.0.tgz#4f9ed3900a98c28c2991a07a6b1c6b1611c85892"
+  integrity sha512-N5cJo/n61ULSwz3W5Iz/IZJ0I9H/PaHc+OMcF2XcRVbLa6B3YwzEW66XGCRKVULlsBNSrIH6tk5un9ayXAXIdw==
+  dependencies:
+    "@commitlint/types" "^18.4.0"
+    lodash.camelcase "^4.3.0"
+    lodash.kebabcase "^4.1.1"
+    lodash.snakecase "^4.1.1"
+    lodash.startcase "^4.4.0"
+    lodash.upperfirst "^4.3.1"
+
 "@commitlint/execute-rule@^17.4.0":
   version "17.4.0"
   resolved "https://registry.npmjs.org/@commitlint/execute-rule/-/execute-rule-17.4.0.tgz"
   integrity sha512-LIgYXuCSO5Gvtc0t9bebAMSwd68ewzmqLypqI2Kke1rqOqqDbMpYcYfoPfFlv9eyLIh4jocHWwCK5FS7z9icUA==
+
+"@commitlint/execute-rule@^18.4.0":
+  version "18.4.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-18.4.0.tgz#a19bdac0195738e264e7dc2028db673a62087b9e"
+  integrity sha512-g013SWki6ZWhURBLOSXTaVQGWHdA0QlPJGiW4a+YpThezmJOemvc4LiKVpn13AjSKQ40QnmBqpBrxujOaSo+3A==
 
 "@commitlint/format@^17.4.4":
   version "17.4.4"
@@ -548,6 +573,24 @@
     ts-node "^10.8.1"
     typescript "^4.6.4 || ^5.0.0"
 
+"@commitlint/load@^18.4.2":
+  version "18.4.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-18.4.2.tgz#f3f213f8c0fd36ded1f8950880905add8ae5920b"
+  integrity sha512-CKmzXdF9XwZJoVijAqpUlV9qzZOkyiYni4KuSCtTZVAAVudi9H84cJ4FqZxSwEP9G21vmoJiNrW8G042AsduVg==
+  dependencies:
+    "@commitlint/config-validator" "^18.4.0"
+    "@commitlint/execute-rule" "^18.4.0"
+    "@commitlint/resolve-extends" "^18.4.0"
+    "@commitlint/types" "^18.4.0"
+    "@types/node" "^18.11.9"
+    chalk "^4.1.0"
+    cosmiconfig "^8.3.6"
+    cosmiconfig-typescript-loader "^5.0.0"
+    lodash.isplainobject "^4.0.6"
+    lodash.merge "^4.6.2"
+    lodash.uniq "^4.5.0"
+    resolve-from "^5.0.0"
+
 "@commitlint/message@^17.4.2":
   version "17.4.2"
   resolved "https://registry.npmjs.org/@commitlint/message/-/message-17.4.2.tgz"
@@ -562,23 +605,23 @@
     conventional-changelog-angular "^6.0.0"
     conventional-commits-parser "^4.0.0"
 
-"@commitlint/prompt-cli@17.7.1":
-  version "17.7.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-17.7.1.tgz#32b3ee9b2de60f69b4f52bf4c6c27da26ecd324f"
-  integrity sha512-FM4nmJgOpE+aMRI4z41Pa4gu4qm6pAiBQN6+oIxM460hUtRF1wx2N+STfJCEHevM+/zS9h2LSXqdSB0aP3LGdQ==
+"@commitlint/prompt-cli@18.4.2":
+  version "18.4.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt-cli/-/prompt-cli-18.4.2.tgz#cba3dd9e575955308ae6c3d73a772fa2de47d159"
+  integrity sha512-OAafLql9Uk8t6h6GjKGC1YEm2dYhCqLNftyULAwBDEu4eKJ/NcNwTc3Lk7etE/mG5t+BP/ak04EHZsso1RtHtA==
   dependencies:
-    "@commitlint/prompt" "^17.7.1"
+    "@commitlint/prompt" "^18.4.2"
     execa "^5.0.0"
     inquirer "^6.5.2"
 
-"@commitlint/prompt@^17.7.1":
-  version "17.7.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-17.7.1.tgz#f9fbe24d873fecb3bcfc33fa860c5b61f39780aa"
-  integrity sha512-TWPATfSarPHdUOGkE/irBtzE+ZhEuUQI8U8PMcrLYi26NtJTHmRWpwZGug5gehcmlvQuLCjoFg3naYrs1BMHEQ==
+"@commitlint/prompt@^18.4.2":
+  version "18.4.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/prompt/-/prompt-18.4.2.tgz#677c876f686a3a1ddc64cea94183718de6bdad22"
+  integrity sha512-piF7TE35c57ao7lO2V2cHVGvlIQlsEJn1C1P+oKqvvWtcvZVG3bKtKDOLSI7WloZ7GDJ4HZYKPyZ+u1yoW29cA==
   dependencies:
-    "@commitlint/ensure" "^17.6.7"
-    "@commitlint/load" "^17.7.1"
-    "@commitlint/types" "^17.4.4"
+    "@commitlint/ensure" "^18.4.0"
+    "@commitlint/load" "^18.4.2"
+    "@commitlint/types" "^18.4.0"
     chalk "^4.1.0"
     inquirer "^6.5.2"
 
@@ -600,6 +643,18 @@
   dependencies:
     "@commitlint/config-validator" "^17.6.7"
     "@commitlint/types" "^17.4.4"
+    import-fresh "^3.0.0"
+    lodash.mergewith "^4.6.2"
+    resolve-from "^5.0.0"
+    resolve-global "^1.0.0"
+
+"@commitlint/resolve-extends@^18.4.0":
+  version "18.4.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/resolve-extends/-/resolve-extends-18.4.0.tgz#69b04efb5253564c773a18241305ddb31b04d8af"
+  integrity sha512-qhgU6ach+S6sJMD9NjCYiEycOObGhxzWQLQzqlScJCv9zkPs15Bg0ffLXTQ3z7ipXv46XEKYMnSJzjLRw2Tlkg==
+  dependencies:
+    "@commitlint/config-validator" "^18.4.0"
+    "@commitlint/types" "^18.4.0"
     import-fresh "^3.0.0"
     lodash.mergewith "^4.6.2"
     resolve-from "^5.0.0"
@@ -632,6 +687,13 @@
   version "17.4.4"
   resolved "https://registry.npmjs.org/@commitlint/types/-/types-17.4.4.tgz"
   integrity sha512-amRN8tRLYOsxRr6mTnGGGvB5EmW/4DDjLMgiwK3CCVEmN6Sr/6xePGEpWaspKkckILuUORCwe6VfDBw6uj4axQ==
+  dependencies:
+    chalk "^4.1.0"
+
+"@commitlint/types@^18.4.0":
+  version "18.4.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-18.4.0.tgz#482393d587a86fdf0d98ed17d2efd598d5021049"
+  integrity sha512-MKeaFxt0I9fhqUb2E+YIzX/gZtmkuodJET/XKiZIMvXUff8Ee4Ih86eLg+yAm2jf1pwGBmU02uNOp0y094w2Uw==
   dependencies:
     chalk "^4.1.0"
 
@@ -1692,6 +1754,13 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-20.4.7.tgz"
   integrity sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==
 
+"@types/node@^18.11.9":
+  version "18.18.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.18.10.tgz#4971bffdf3a43977c4c8166aa714b2c0b05b3256"
+  integrity sha512-luANqZxPmjTll8bduz4ACs/lNTCLuWssCyjqTY9yLdsv1xnViQp3ISKwsEWOIecO13JWUqjVdig/Vjjc09o8uA==
+  dependencies:
+    undici-types "~5.26.4"
+
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
   resolved "https://registry.npmjs.org/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz"
@@ -2467,6 +2536,13 @@ cosmiconfig-typescript-loader@^4.0.0:
   resolved "https://registry.npmjs.org/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-4.4.0.tgz"
   integrity sha512-BabizFdC3wBHhbI4kJh0VkQP9GkBfoHPydD0COMce1nJ1kJAB3F2TmJ/I7diULBKtmEWSwEbuN/KDtgnmUUVmw==
 
+cosmiconfig-typescript-loader@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-5.0.0.tgz#0d3becfe022a871f7275ceb2397d692e06045dc8"
+  integrity sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==
+  dependencies:
+    jiti "^1.19.1"
+
 cosmiconfig@^7.0.0:
   version "7.1.0"
   resolved "https://registry.npmjs.org/cosmiconfig/-/cosmiconfig-7.1.0.tgz"
@@ -2486,6 +2562,16 @@ cosmiconfig@^8.0.0:
     import-fresh "^3.2.1"
     js-yaml "^4.1.0"
     parse-json "^5.0.0"
+    path-type "^4.0.0"
+
+cosmiconfig@^8.3.6:
+  version "8.3.6"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.3.6.tgz#060a2b871d66dba6c8538ea1118ba1ac16f5fae3"
+  integrity sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==
+  dependencies:
+    import-fresh "^3.3.0"
+    js-yaml "^4.1.0"
+    parse-json "^5.2.0"
     path-type "^4.0.0"
 
 create-jest@^29.7.0:
@@ -3590,7 +3676,7 @@ immer@9.0.19:
   resolved "https://registry.npmjs.org/immer/-/immer-9.0.19.tgz"
   integrity sha512-eY+Y0qcsB4TZKwgQzLaE/lqYMlKhv5J9dyd2RhhtGhNo2njPXDqU9XPfcNfa3MIDsdtZt5KlkIsirlo4dHsWdQ==
 
-import-fresh@^3.0.0, import-fresh@^3.2.1:
+import-fresh@^3.0.0, import-fresh@^3.2.1, import-fresh@^3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.0.tgz"
   integrity sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==
@@ -4365,6 +4451,11 @@ jest@29.7.0:
     "@jest/types" "^29.6.3"
     import-local "^3.0.2"
     jest-cli "^29.7.0"
+
+jiti@^1.19.1:
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.0.tgz#7c97f8fe045724e136a397f7340475244156105d"
+  integrity sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==
 
 js-sha3@0.8.0:
   version "0.8.0"
@@ -6048,6 +6139,11 @@ unbox-primitive@^1.0.2:
     has-bigints "^1.0.2"
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
+
+undici-types@~5.26.4:
+  version "5.26.5"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
+  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
 universalify@^2.0.0:
   version "2.0.0"
