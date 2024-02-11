@@ -16,10 +16,10 @@
     "test": "jest --testPathPattern='\\/__tests__\\/.*\\.(?:test|spec)\\.js$' --ci  2>&1"
   },
   "dependencies": {
-    "@strapi/design-system": "^1.6.3",
-    "@strapi/helper-plugin": "^4.12.5",
-    "@strapi/icons": "^1.11.0",
-    "prop-types": "^15.7.2",
+    "@strapi/design-system": "^1.14.1",
+    "@strapi/helper-plugin": "^4.20.0",
+    "@strapi/icons": "^1.14.1",
+    "prop-types": "^15.8.1",
     "axios": "1.6.0",
     "mathjs": "11.11.1"
   },
@@ -49,14 +49,14 @@
     "styled-components": "^5.3.6"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^4.4.0",
+    "@strapi/strapi": "^4.20.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
     "styled-components": "^5.3.6"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
+    "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "repository": {
